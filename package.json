@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "esm": "^3.0.28",
-    "@picabia/picabia": "^0.8.0"
+    "@picabia/picabia": "^0.9.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",
