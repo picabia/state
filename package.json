@@ -1,6 +1,6 @@
 {
   "name": "@picabia/state",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Picabia - State management class with asynchronous transitions",
   "license": "MIT",
   "homepage": "https://github.com/picabia/class-state",
