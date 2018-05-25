@@ -1,0 +1,40 @@
+{
+  "name": "@picabia/state",
+  "version": "0.0.1",
+  "description": "Picabia - State management class with asynchronous transitions",
+  "license": "MIT",
+  "homepage": "https://github.com/picabia/class-state",
+  "author": "Andre Torgal <andre.torgal@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/picabia/class-state.git"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "_mocha --require esm --watch --recursive test/",
+    "test": "nyc _mocha --require esm --recursive test/",
+    "coverage": "http-server coverage/",
+    "lint": "eslint src/ test/",
+    "lint-fix": "eslint --fix src/ test/",
+    "build": "npm run lint && npm run test && webpack --config webpack.prod.js"
+  },
+  "esm": {
+    "cjs": true
+  },
+  "dependencies": {
+    "esm": "^3.0.28",
+    "@picabia/picabia": "^0.8.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.10.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "http-server": "^0.11.1",
+    "mocha": "^5.1.1",
+    "nyc": "^11.7.1"
+  }
+}
